@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stocks</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/styles.css">
+    <script src="./static/index.js"></script>
+</head>
+
+<body>
+    <div id="body-div">
+        <div class="header">
+            <header>
+                <form id="form_submit" action="">
+                    <input id="stock" placeholder="Stock" type="text">
+                    <input type="submit" value="submit">
+                </form>
+            </header>
+        </div>
+        <div class="container">
+            <div id="container-header">
+                <div id="market-div">MARKET &gt;</div>
+                <div id="stock-name-div"></div>
+                <div id="stock-ETF-div">NASDAQ</div>
+            </div>
+            <div id="container-body">
+                <div id="name-ticker"></div>
+                <div id="price"></div>
+                <div id="points"></div>
+                <div id="percentage"></div>
+                <div id="volume"></div>
+            </div>
+        </div>
+        <div class="popular-stocks">
+            <header class="pop-stocks-header">popular stocks</header>
+            <div class="pop-stocks">
+                <ul>
+                    <li>
+                        <div class="pop-stocks-titles">Ticker</div>
+                        <div id="AAPL">AAPL</div>
+                        <div id="TSLA">TSLA</div>
+                        <div id="AMZN">AMZN</div>
+                        <div id="AMD">AMD</div>
+                        <div id="NVDA">NVDA</div>
+                        <div id="GOOGL">GOOGL</div>
+                        <div id="MSFT">MSFT</div>
+                    </li>
+                    <li>
+                        <div class="pop-stocks-titles">Price</div>
+                        <div id="AAPL-price"></div>
+                        <div id="TSLA-price"></div>
+                        <div id="AMZN-price"></div>
+                        <div id="AMD-price"></div>
+                        <div id="NVDA-price"></div>
+                        <div id="GOOGL-price"></div>
+                        <div id="MSFT-price"></div>
+                    </li>
+                    <li>
+                        <div class="pop-stocks-titles">Point</div>
+                        <div id="AAPL-points"></div>
+                        <div id="TSLA-points"></div>
+                        <div id="AMZN-points"></div>
+                        <div id="AMD-points"></div>
+                        <div id="NVDA-points"></div>
+                        <div id="GOOGL-points"></div>
+                        <div id="MSFT-points"></div>
+                    </li>
+                    <li>
+                        <div class="pop-stocks-titles">Percentage</div>
+                        <div id="AAPL-perc"></div>
+                        <div id="TSLA-perc"></div>
+                        <div id="AMZN-perc"></div>
+                        <div id="AMD-perc"></div>
+                        <div id="NVDA-perc"></div>
+                        <div id="GOOGL-perc"></div>
+                        <div id="MSFT-perc"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
