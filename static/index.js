@@ -53,7 +53,7 @@ function fetchStockData(stock){
             // call this function every two seconds
             display_stock_data(data, stock);
         })
-        .catch(err => alert('Invalid stock ticker'));
+        .catch(err => console.error(err));
 
     return false;
 }
@@ -78,7 +78,7 @@ function display_stock_data(stockData, stockName){
     document.querySelector('#percentage').innerHTML = 'Percentage:  ' + plus + change_percentage + '%';
     document.querySelector('#points').innerHTML = 'Points: ' + plus + change_point;
     document.querySelector('#volume').innerHTML = 'Volume: ' + total_vol;
-    document.querySelector('#stock-name-div').innerHTML = stockName;
+    document.querySelector('#market-ticker-div').innerHTML = 'Market > ' + stockName;
     
     document.querySelector('#price').style.color = current_stock_color;
     // document.querySelector('#percentage').style.color = current_stock_color;
@@ -102,7 +102,7 @@ function fetchPopStocks(){
             // call this function every two seconds
             display_pop_stocks(data, popStock);
         })
-        .catch(err => alert('Invalid stock ticker'));//console.error(err)
+        .catch(err => console.error(err));//console.error(err)
 
         return false;
     });
@@ -126,6 +126,7 @@ function display_pop_stocks(stockData, stockName){
     document.querySelector(`#${stockName}-price`).innerHTML = price;
     document.querySelector(`#${stockName}-perc`).innerHTML = plus + change_percentage + '%';
     document.querySelector(`#${stockName}-points`).innerHTML = plus + change_point;
+    document.querySelector(`#${stockName}-volume`).innerHTML = total_vol;
 }
 
 function decide_color(dataAttribute){

@@ -25,13 +25,12 @@ body {
     min-width: 100vw;
 }
 
-.container {
-    height: 25vh;
-    width: 75vw;
-    margin-left: 13vw;
-    margin-right: 8vw;
-    margin-top: 5vh;
-    padding: 0%;
+.container-one {
+    /* background-color: blue; */
+    padding: 5vh 7vw;
+}
+
+.container{
     border-radius: 1rem;
     outline-offset: 0.1rem;
     overflow: hidden;
@@ -39,139 +38,72 @@ body {
     border-radius: 5px;
     background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(5px);
+    padding: 0%;
 }
+
 
 #container-header {
     background-color: blueviolet;
-    height: 1.5vh;
+    height: 2.5vh;
+    text-align: center;
+    align-items: center;
 }
 
-#market-div {
+#market-ticker-div {
     /* background-color: yellow; */
-    min-width: 5.5vw;
+    min-width: 10.5vw;
     height: 1.5vh;
     float: left;
     color: #FFFFFF;
     margin-left: 0.2rem;
     opacity: 0.8;
-    font-size: 9px;
-    font-family: OpenSans-Regular, PingFangSC-Regular, Arial, Helvetica, Microsoft YaHei, sans-serif;
-    color: #FFFFFF;
-    padding-top: 0.1vh;
-}
-
-#stock-name-div {
-    /* background-color: green; */
-    min-width: 9vw;
-    height: 1.5vh;
-    float: left;
-    font-size: 9px;
-    font-family: OpenSans-Regular, PingFangSC-Regular, Arial, Helvetica, Microsoft YaHei, sans-serif;
-    color: #FFFFFF;
-    padding-top: 0.1vh;
-    margin-left: 0.5vw;
-}
-
-#stock-ETF-div {
-    /* background-color: grey; */
-    min-width: 52vw;
-    height: 1.5vh;
-    float: left;
-    text-align: right;
     font-size: 10px;
     font-family: OpenSans-Regular, PingFangSC-Regular, Arial, Helvetica, Microsoft YaHei, sans-serif;
     color: #FFFFFF;
-    opacity: 0.8;
-    line-height: 1.9vh;
+    padding-top: 0.4vh;
 }
 
 #container-body {
-    /* background-color: blueviolet; */
-    /* display: inline-block; */
     position: relative;
     min-height: 30vh;
+    text-align: center;
+    align-items: center;
 }
 
 #name-ticker {
-    /* background-color: blue; */
-    min-width: 12vw;
-    text-align: left;
-    position: absolute;
-    left: 23vw;
-    top: 2vh;
+    color: white;
     font-family: OpenSans-Light;
     font-size: 45px;
     font-weight: 200;
-    color: white;
-    /* margin-top: 2vh; */
 }
 
 #price {
-    /* background-color: pink; */
-    text-align: left;
-    min-width: 6vw;
-    height: 5vh;
-    float: left;
     font-family: OpenSans-Regular, PingFangSC-Regular, Arial, Helvetica, Microsoft YaHei, sans-serif;
     font-size: 30px;
     font-weight: bold;
-    position: absolute;
-    left: 23vw;
-    top: 10vh;
-}
-
-#points,
-#percentage,
-#volume {
-    padding-left: 1.5vw;
-    font-family: OpenSans-Regular, PingFangSC-Regular, Arial, Helvetica, Microsoft YaHei, sans-serif;
-    font-size: 10px;
-    font-weight: bold;
-}
-
-#points {
-    /* background-color: grey; */
-    position: absolute;
-    left: 23vw;
-    top: 15.5vh;
-}
-
-#percentage {
-    /* background-color: blue; */
-    position: absolute;
-    left: 23vw;
-    top: 17vh;
-}
-
-#volume {
-    /* background-color: green; */
-    position: absolute;
-    left: 23vw;
-    top: 18.6vh;
 }
 
 /* ------------------------------------------------------------- */
 
+.container-two {
+    /* background-color: blue; */
+    padding: 5vh 7vw;
+}
+
 .popular-stocks {
-    /* background-color: red; */
-    height: 44vh;
-    width: 75vw;
-    margin-top: 2rem;
-    margin-left: 13vw;
     border-radius: 1rem;
     outline-offset: 0.1rem;
     overflow: hidden;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, .15);
-
     backdrop-filter: blur(5px);
+    padding: 0%;
 }
-
 
 .pop-stocks-header {
     background-color: blueviolet;
-    height: 5vh;
+    height: 7vh;
     text-align: center;
     font-size: 26px;
     text-transform: capitalize;
@@ -212,23 +144,115 @@ body {
 .pop-stocks {
     /* background-color: red; */
     display: flex;
+    text-align: center;
     align-items: center;
 
 }
 
 div ul {
+    width: 100vw;
     list-style-type: none;
+    text-align: center;
+    align-items: center;
+    /* padding: 0 3vw; */
+    
 }
 
 ul li {
     /* background-color: green; */
     margin-top: 0.7rem;
-    height: 38vh;
+    /* height: 38vh; */
     width: 16vw;
     float: left;
-    line-height: 2.5rem;
+    /* line-height: 2.5rem; */
     word-spacing: 4.2rem;
     margin-left: 4.4px;
     text-align: left;
-
 }
+
+.volume-column {
+    display: none;
+}
+
+#volume-title-div{
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 760px) {
+    #market-ticker-div {
+        font-size: 15px;
+    }
+    #name-ticker {
+        font-size: 65px;
+    }
+
+    #price {
+        font-size: 50px;
+    }
+
+    #points, #percentage, #volume{
+        font-size: 25px;
+    }
+
+    .pop-stocks-header {
+        font-size: 40px;
+    }
+
+    ul li {
+        font-size: 30px;
+        /* line-height: 3.5rem; */
+    }
+
+    /* #volum-column{
+        display: none;
+    } */
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container-one {
+        padding: 10vh 24vw;
+        padding-bottom: 5vh;
+    }
+
+    .container-two {
+        padding: 0vh 24vw;
+        padding-top: 0%;
+    }
+
+    #market-ticker-div {
+        font-size: 15px;
+    }
+
+    #name-ticker {
+        font-size: 45px;
+    }
+
+    #price {
+        font-size: 30px;
+    }
+
+    #points, #percentage, #volume{
+        font-size: 15px;
+    }
+
+    .pop-stocks-header {
+        font-size: 30px;
+    }
+
+    ul li {
+        font-size: 15px;
+        width: 8vw;
+    }
+
+    .volume-column{
+        display: block;
+    }
+
+    #container-header {
+        height: 4vh;
+    }
+}
+
+
