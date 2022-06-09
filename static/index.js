@@ -2,8 +2,6 @@ let stockID = -1;
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    // const appleID = setInterval(function(){fetchStockData('AAPL');}, 500);
-    // setInterval(fetchPopStocks, 1000);
     fetchStockData('AAPL');
     fetchPopStocks();
     document.querySelector('#AAPL').addEventListener('click', ()=> fetchStockData('AAPL'));
@@ -23,14 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
             stock = 'AAPL';
         }
         
-        // if(appleID){
-        //     clearInterval(appleID);
-        // }
-        // test this out tomorrow
-        // if(stockID !== -1){
-        //     clearInterval(stockID);
-        // }
-        // stockID = setInterval(function(){fetchStockData(stock);}, 500);
         fetchStockData(stock);
         return false;
     }
