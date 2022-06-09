@@ -2,7 +2,6 @@ let stockID = -1;
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    fetchStockData('AAPL');
     fetchPopStocks();
     document.querySelector('#AAPL').addEventListener('click', ()=> fetchStockData('AAPL'));
     document.querySelector('#TSLA').addEventListener('click', ()=>  fetchStockData('TSLA'));
