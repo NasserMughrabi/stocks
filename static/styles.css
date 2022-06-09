@@ -20,13 +20,11 @@ body {
 }
 
 .header {
-    /* background-color: red; */
     min-height: 5vh;
     min-width: 100vw;
 }
 
 .container-one {
-    /* background-color: blue; */
     padding: 5vh 7vw;
 }
 
@@ -50,7 +48,6 @@ body {
 }
 
 #market-ticker-div {
-    /* background-color: yellow; */
     min-width: 10.5vw;
     height: 1.5vh;
     float: left;
@@ -86,7 +83,6 @@ body {
 /* ------------------------------------------------------------- */
 
 .container-two {
-    /* background-color: blue; */
     padding: 5vh 7vw;
 }
 
@@ -109,7 +105,6 @@ body {
     text-transform: capitalize;
     font-family: OpenSans-Regular, PingFangSC-Regular, Arial, Helvetica, Microsoft YaHei, sans-serif;
     color: #FFFFFF;
-    /* padding-top: 2rem; */
 }
 
 .pop-stocks-titles {
@@ -136,13 +131,7 @@ body {
     color: white;
 }
 
-.popular-stocks {
-    /* background-color: yellow; */
-
-}
-
 .pop-stocks {
-    /* background-color: red; */
     display: flex;
     text-align: center;
     align-items: center;
@@ -154,17 +143,13 @@ div ul {
     list-style-type: none;
     text-align: center;
     align-items: center;
-    /* padding: 0 3vw; */
     
 }
 
 ul li {
-    /* background-color: green; */
     margin-top: 0.7rem;
-    /* height: 38vh; */
     width: 16vw;
     float: left;
-    /* line-height: 2.5rem; */
     word-spacing: 4.2rem;
     margin-left: 4.4px;
     text-align: left;
@@ -201,12 +186,8 @@ ul li {
 
     ul li {
         font-size: 30px;
-        /* line-height: 3.5rem; */
     }
 
-    /* #volum-column{
-        display: none;
-    } */
 }
 
 @media screen and (min-width: 1024px) {
