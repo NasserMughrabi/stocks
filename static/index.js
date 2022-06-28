@@ -1,3 +1,4 @@
+// @author: Nasser Mughrabi 2022
 let stockID = -1;
 
 document.addEventListener('DOMContentLoaded', function () {
